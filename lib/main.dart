@@ -25,11 +25,11 @@ class RootWidget extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              
-              SizedBox(
-                width: 200,
-                height: 400,
-                child: Image.asset(Assets.imagesTasneem)                 ), 
+                const CircleAvatar(
+                  radius: 85,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('assets/images/tasneem.jpeg'),
+                ),   
               const Text('Tasneem Radwan ',style: TextStyle(
                 fontWeight: FontWeight.bold,fontSize: 35
               ),),
